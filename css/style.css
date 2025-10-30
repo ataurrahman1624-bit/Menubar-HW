@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.myname{
+    color: aliceblue;
+    background-color: darkgreen;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    }
+.myname{
+    color: aliceblue;
+    background-color: darkgreen;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    }
+nav{
+    padding: 10px 0;
+    border-bottom: 2px solid #dadada;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px;
+}
+nav a{
+    border-bottom:1px solid transparent ;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: #8f8f8f;
+    transition: 300ms ;
+}
+
+nav li:hover > a{
+    color: orangered;
+    border-color: orangered;
+    font-weight: 600;
+    }
+nav .submenu{
+    position: absolute;
+    display: block;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: 3px solid orangered ;
+    min-width: 200px;
+    padding: 10px 8px ;
+    margin-top: 50px;
+    opacity: 0;
+    visibility: hidden;
+}
+nav li:hover >.submenu{
+    opacity: 1;
+    margin-top: 0px;
+    visibility: visible;
+    transition: 0.4s;
+}
+nav li .submenu li:hover > a{
+    margin-left: 10px;
+}
+nav li .submenu .submenu{
+    left: 100%;
+    top: 0%;
+}
+li{
+    position: relative;
+}
